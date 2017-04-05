@@ -6,10 +6,10 @@ class Team
     private $teamName;
     private $teamSalary;
 
-    public function __construct($teamName, Employee ...$employers)
+    public function __construct(string $teamName, Employee ...$employers)
     {
         $this->teamName = $teamName;
-        foreach ($employers as $employee){
+        foreach ($employers as $employee) {
             array_push($this->employers, $employee);
         }
     }
@@ -17,7 +17,7 @@ class Team
     public function getTeamSalary()
     {
         $this->teamSalary = 0;
-        foreach ($this->employers as $employee){
+        foreach ($this->employers as $employee) {
             $this->teamSalary += $employee->getEmployeeSalary();
         }
         return $this->teamSalary;

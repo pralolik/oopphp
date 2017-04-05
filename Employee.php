@@ -5,10 +5,10 @@ abstract class Employee
     private $employeeName;
     private $employeeSalary;
 
-    public function __construct($employeeName, Salary $employeeSalary)
+    public function __construct(string $employeeName, Salary $employeeSalary)
     {
-       $this->employeeName = $employeeName;
-       $this->employeeSalary = $employeeSalary;
+        $this->employeeName = $employeeName;
+        $this->employeeSalary = $employeeSalary;
     }
 
     public function getEmployeeName()

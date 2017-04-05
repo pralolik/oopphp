@@ -5,10 +5,10 @@ class HourlyPaymentSalary implements Salary
     public $salaryPerHour;
     public $hourCount;
 
-    public function __construct($salaryPerHour1, $hourCount1)
+    public function __construct(int $salaryPerHour, int $hourCount)
     {
-        $this->salaryPerHour = $salaryPerHour1;
-        $this->hourCount = $hourCount1;
+        $this->salaryPerHour = $salaryPerHour;
+        $this->hourCount = $hourCount;
     }
 
     public function getSalary()
